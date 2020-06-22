@@ -361,7 +361,7 @@
                         <barButtonItem key="rightBarButtonItem" title="Send" id="WoG-aj-e9c">
                             <connections>
                                 <action selector="RegisterBtn:" destination="ggX-sI-aXB" id="LXZ-4D-vf7"/>
-                                <segue destination="XGM-Qy-GOJ" kind="showDetail" id="h7Y-G9-tOa"/>
+                                <segue destination="XGM-Qy-GOJ" kind="showDetail" identifier="ToPPageSignup" id="h7Y-G9-tOa"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -401,6 +401,7 @@
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="zcg-zL-p15"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="n8n-Uf-KoO">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
@@ -417,6 +418,6 @@
         <image name="142" width="1000" height="1500"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="lUb-dt-ErT"/>
+        <segue reference="h7Y-G9-tOa"/>
     </inferredMetricsTieBreakers>
 </document>

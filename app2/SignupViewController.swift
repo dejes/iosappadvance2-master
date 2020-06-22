@@ -74,11 +74,8 @@ class SignupViewController: UIViewController {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
        if segue.identifier == "ToPPageSignup" {
-            let navController = segue.destination as! UINavigationController
-           // let tabController = segue.destination as! UITabBarController
-        
-            let detailController = navController.topViewController as! PersonalPageViewController
-        
+            let tabController = segue.destination as! UITabBarController
+            let detailController = tabController.viewControllers![0] as! PersonalPageViewController
             detailController.userid = userid!
         }
     }
