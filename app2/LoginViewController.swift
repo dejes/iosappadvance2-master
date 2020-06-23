@@ -18,6 +18,8 @@ class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        let domain = Bundle.main.bundleIdentifier!
+        UserDefaults.standard.removePersistentDomain(forName: domain)
        // if(userDefault.value(forKey: "userid"))
        if userDefault.value(forKey: "userid") != nil {
             storeuserid = userDefault.value(forKey: "userid") as? String
