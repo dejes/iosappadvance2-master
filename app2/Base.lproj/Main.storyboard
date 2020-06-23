@@ -47,7 +47,6 @@
                                 <state key="normal" title="Login"/>
                                 <connections>
                                     <action selector="LoginBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="COf-Ps-bVJ"/>
-                                    <segue destination="XGM-Qy-GOJ" kind="showDetail" identifier="ToPPageLogin" id="lUb-dt-ErT"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vni-ur-CoH">
@@ -66,6 +65,7 @@
                     <connections>
                         <outlet property="PasswordTF" destination="Tzy-ye-mBH" id="kcH-uu-qBs"/>
                         <outlet property="UserNameTF" destination="DMX-he-MJO" id="vae-aO-EQf"/>
+                        <segue destination="XGM-Qy-GOJ" kind="showDetail" identifier="ToPPageLogin" id="7FN-AC-XpV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -361,7 +361,6 @@
                         <barButtonItem key="rightBarButtonItem" title="Send" id="WoG-aj-e9c">
                             <connections>
                                 <action selector="RegisterBtn:" destination="ggX-sI-aXB" id="LXZ-4D-vf7"/>
-                                <segue destination="XGM-Qy-GOJ" kind="showDetail" identifier="ToPPageSignup" id="h7Y-G9-tOa"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -370,6 +369,7 @@
                         <outlet property="GenderSegment" destination="pCj-3k-Nu5" id="tbL-hg-umx"/>
                         <outlet property="PasswordLabel" destination="HOe-Vj-IOe" id="A8a-s8-rtM"/>
                         <outlet property="nickNameLabel" destination="Hdp-Ub-42y" id="v6V-Tx-5qI"/>
+                        <segue destination="XGM-Qy-GOJ" kind="showDetail" identifier="ToPPageSignup" id="nea-DX-WPh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="feg-98-h7t" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -418,6 +418,6 @@
         <image name="142" width="1000" height="1500"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="h7Y-G9-tOa"/>
+        <segue reference="7FN-AC-XpV"/>
     </inferredMetricsTieBreakers>
 </document>

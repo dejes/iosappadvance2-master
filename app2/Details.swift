@@ -17,8 +17,8 @@ enum NetworkError: Error {
 
 let apiToken="00-NaG3a4Y-6GkBMSqbamluvV3wsHFX4T85hiXnM3m"
 struct LoginDetails:Encodable {
-    var username="jack@test.com"
-    var password="Abcd1234"
+    var username:String?
+    var password:String?
 }
 struct logindata:Encodable {
     var data:LoginDetails

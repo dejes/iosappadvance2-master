@@ -76,7 +76,7 @@ class SignupViewController: UIViewController {
        if segue.identifier == "ToPPageSignup" {
             let tabController = segue.destination as! UITabBarController
             let detailController = tabController.viewControllers![0] as! PersonalPageViewController
-            detailController.userid = userid!
+            detailController.userid = userid!	
         }
     }
     
