@@ -18,8 +18,7 @@ class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let domain = Bundle.main.bundleIdentifier!
-        UserDefaults.standard.removePersistentDomain(forName: domain)
+        
        // if(userDefault.value(forKey: "userid"))
        if userDefault.value(forKey: "userid") != nil {
             storeuserid = userDefault.value(forKey: "userid") as? String
@@ -38,6 +37,9 @@ class LoginViewController: UIViewController {
             self.performSegue(withIdentifier:"ToPPageLogin" , sender: nil)
         }*/
         // Do any additional setup after loading the view.
+    }
+    @IBAction func unwindfunc(segue:UIStoryboardSegue){
+        
     }
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.view.endEditing(true)

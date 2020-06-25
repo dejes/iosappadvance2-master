@@ -57,6 +57,11 @@ class PersonalPageViewController: UIViewController, UIImagePickerControllerDeleg
             }
         }
     }
+    @IBAction func Logout(_ sender: Any) {
+        let domain = Bundle.main.bundleIdentifier!
+        UserDefaults.standard.removePersistentDomain(forName: domain)
+        performSegue(withIdentifier: "LogoutSegue", sender: nil)
+    }
     weak open var delegate: (UIImagePickerControllerDelegate & UINavigationControllerDelegate)?
     let photopicker = UIImagePickerController()
     @IBAction func ChangeProfilePic(_ sender: UIButton) {
